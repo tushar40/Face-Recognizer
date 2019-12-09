@@ -200,7 +200,6 @@
 				ED22E5C0239682DC00C197A1 /* Sources */,
 				ED22E5C1239682DC00C197A1 /* Frameworks */,
 				ED22E5C2239682DC00C197A1 /* Resources */,
-				3FF3FD2FE41405BDA6DD42AA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,7 +237,6 @@
 				ED22E5E1239682DF00C197A1 /* Sources */,
 				ED22E5E2239682DF00C197A1 /* Frameworks */,
 				ED22E5E3239682DF00C197A1 /* Resources */,
-				AFBC0E6B78DF37EA95D9CEAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,23 +363,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3FF3FD2FE41405BDA6DD42AA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS/Pods-Face Recognition iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS/Pods-Face Recognition iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS/Pods-Face Recognition iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9D9BDEA97B5C3C90B6E5684F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,23 +383,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AFBC0E6B78DF37EA95D9CEAC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS-Face Recognition iOSUITests/Pods-Face Recognition iOS-Face Recognition iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS-Face Recognition iOSUITests/Pods-Face Recognition iOS-Face Recognition iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS-Face Recognition iOSUITests/Pods-Face Recognition iOS-Face Recognition iOSUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

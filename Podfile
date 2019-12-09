@@ -6,8 +6,8 @@ target 'Face Recognition iOS' do
   use_frameworks!
 
   # Pods for Face Recognition iOS
-  pod 'MSGraphSDK'
-  pod 'MSAL'
+#  pod 'MSGraphSDK'
+#  pod 'MSAL'
 
   target 'Face Recognition iOSTests' do
     inherit! :search_paths
