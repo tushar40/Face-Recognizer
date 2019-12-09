@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Face_Recognition_iOS_Face_Recognition_iOSUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Face_Recognition_iOS_Face_Recognition_iOSUITests
+@end

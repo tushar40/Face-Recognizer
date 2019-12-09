@@ -1,0 +1,6 @@
+framework module Pods_Face_Recognition_iOS_Face_Recognition_iOSUITests {
+  umbrella header "Pods-Face Recognition iOS-Face Recognition iOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS-Face Recognition iOSUITests/Pods-Face Recognition iOS-Face Recognition iOSUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/MSAL/MSAL.framework
+${BUILT_PRODUCTS_DIR}/MSGraphSDK/MSGraphSDK.framework

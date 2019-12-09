@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D7E5769006FDFB6C21FB04A /* Pods_Face_Recognition_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A326C2580FEAF357124CA75 /* Pods_Face_Recognition_iOSTests.framework */; };
+		61CD22D437FA6555D4B29C19 /* Pods_Face_Recognition_iOS_Face_Recognition_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1114A8CB91176095AECAE3E /* Pods_Face_Recognition_iOS_Face_Recognition_iOSUITests.framework */; };
+		ED22E5C8239682DC00C197A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22E5C7239682DC00C197A1 /* AppDelegate.swift */; };
+		ED22E5CA239682DC00C197A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22E5C9239682DC00C197A1 /* SceneDelegate.swift */; };
+		ED22E5CC239682DC00C197A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22E5CB239682DC00C197A1 /* ViewController.swift */; };
+		ED22E5CF239682DC00C197A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED22E5CD239682DC00C197A1 /* Main.storyboard */; };
+		ED22E5D1239682DE00C197A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED22E5D0239682DE00C197A1 /* Assets.xcassets */; };
+		ED22E5D4239682DE00C197A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED22E5D2239682DE00C197A1 /* LaunchScreen.storyboard */; };
+		ED22E5DF239682DF00C197A1 /* Face_Recognition_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22E5DE239682DF00C197A1 /* Face_Recognition_iOSTests.swift */; };
+		ED22E5EA239682DF00C197A1 /* Face_Recognition_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22E5E9239682DF00C197A1 /* Face_Recognition_iOSUITests.swift */; };
+		ED8897222398FA23009348A0 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8897212398FA22009348A0 /* FaceView.swift */; };
+		ED889724239A7F2E009348A0 /* CoreGraphicsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED889723239A7F2E009348A0 /* CoreGraphicsExtensions.swift */; };
+		ED889726239A7F4A009348A0 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED889725239A7F4A009348A0 /* UIViewExtension.swift */; };
+		EDE65CD123979D28001CCBF8 /* FaceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE65CD023979D28001CCBF8 /* FaceAPI.swift */; };
+		EDE65CD323979D32001CCBF8 /* ApplicationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE65CD223979D32001CCBF8 /* ApplicationConstants.swift */; };
+		EDE65CD523979EF4001CCBF8 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE65CD423979EF4001CCBF8 /* UIViewController+alert.swift */; };
+		EDE65CD72397B64C001CCBF8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE65CD62397B64C001CCBF8 /* Models.swift */; };
+		F9058CA85CF39D8BAEF55A53 /* Pods_Face_Recognition_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6512EC43A720679BDF19ED1 /* Pods_Face_Recognition_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED22E5DB239682DF00C197A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED22E5BC239682DC00C197A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED22E5C3239682DC00C197A1;
+			remoteInfo = "Face Recognition iOS";
+		};
+		ED22E5E6239682DF00C197A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED22E5BC239682DC00C197A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED22E5C3239682DC00C197A1;
+			remoteInfo = "Face Recognition iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B3D8D666D43861FF63EA1ED /* Pods-Face Recognition iOS-Face Recognition iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face Recognition iOS-Face Recognition iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Face Recognition iOS-Face Recognition iOSUITests/Pods-Face Recognition iOS-Face Recognition iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5B4E498DAF7E4A3AB6FF2812 /* Pods-Face Recognition iOS-Face Recognition iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face Recognition iOS-Face Recognition iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Face Recognition iOS-Face Recognition iOSUITests/Pods-Face Recognition iOS-Face Recognition iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		624D08A4113240527BA4B7C3 /* Pods-Face Recognition iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face Recognition iOS.release.xcconfig"; path = "Target Support Files/Pods-Face Recognition iOS/Pods-Face Recognition iOS.release.xcconfig"; sourceTree = "<group>"; };
+		6A326C2580FEAF357124CA75 /* Pods_Face_Recognition_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Face_Recognition_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7486D714DC417165681552AC /* Pods-Face Recognition iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face Recognition iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Face Recognition iOSTests/Pods-Face Recognition iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2F612AB66097A4167AE0334 /* Pods-Face Recognition iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face Recognition iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Face Recognition iOSTests/Pods-Face Recognition iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C95D5406B2F016F94843DEB8 /* Pods-Face Recognition iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face Recognition iOS.debug.xcconfig"; path = "Target Support Files/Pods-Face Recognition iOS/Pods-Face Recognition iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E6512EC43A720679BDF19ED1 /* Pods_Face_Recognition_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Face_Recognition_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED22E5C4239682DC00C197A1 /* Face Recognition iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Face Recognition iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED22E5C7239682DC00C197A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED22E5C9239682DC00C197A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ED22E5CB239682DC00C197A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED22E5CE239682DC00C197A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED22E5D0239682DE00C197A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED22E5D3239682DE00C197A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED22E5D5239682DE00C197A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED22E5DA239682DF00C197A1 /* Face Recognition iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Face Recognition iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED22E5DE239682DF00C197A1 /* Face_Recognition_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face_Recognition_iOSTests.swift; sourceTree = "<group>"; };
+		ED22E5E0239682DF00C197A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED22E5E5239682DF00C197A1 /* Face Recognition iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Face Recognition iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED22E5E9239682DF00C197A1 /* Face_Recognition_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face_Recognition_iOSUITests.swift; sourceTree = "<group>"; };
+		ED22E5EB239682DF00C197A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED8897212398FA22009348A0 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		ED889723239A7F2E009348A0 /* CoreGraphicsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtensions.swift; sourceTree = "<group>"; };
+		ED889725239A7F4A009348A0 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		EDE65CD023979D28001CCBF8 /* FaceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceAPI.swift; sourceTree = "<group>"; };
+		EDE65CD223979D32001CCBF8 /* ApplicationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationConstants.swift; sourceTree = "<group>"; };
+		EDE65CD423979EF4001CCBF8 /* UIViewController+alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
+		EDE65CD62397B64C001CCBF8 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F1114A8CB91176095AECAE3E /* Pods_Face_Recognition_iOS_Face_Recognition_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Face_Recognition_iOS_Face_Recognition_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED22E5C1239682DC00C197A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9058CA85CF39D8BAEF55A53 /* Pods_Face_Recognition_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED22E5D7239682DF00C197A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D7E5769006FDFB6C21FB04A /* Pods_Face_Recognition_iOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED22E5E2239682DF00C197A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CD22D437FA6555D4B29C19 /* Pods_Face_Recognition_iOS_Face_Recognition_iOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19AF2DB0C5E16A94D5A2E19E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C95D5406B2F016F94843DEB8 /* Pods-Face Recognition iOS.debug.xcconfig */,
+				624D08A4113240527BA4B7C3 /* Pods-Face Recognition iOS.release.xcconfig */,
+				5B4E498DAF7E4A3AB6FF2812 /* Pods-Face Recognition iOS-Face Recognition iOSUITests.debug.xcconfig */,
+				3B3D8D666D43861FF63EA1ED /* Pods-Face Recognition iOS-Face Recognition iOSUITests.release.xcconfig */,
+				A2F612AB66097A4167AE0334 /* Pods-Face Recognition iOSTests.debug.xcconfig */,
+				7486D714DC417165681552AC /* Pods-Face Recognition iOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		54618954690591E024FA74CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6512EC43A720679BDF19ED1 /* Pods_Face_Recognition_iOS.framework */,
+				F1114A8CB91176095AECAE3E /* Pods_Face_Recognition_iOS_Face_Recognition_iOSUITests.framework */,
+				6A326C2580FEAF357124CA75 /* Pods_Face_Recognition_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED22E5BB239682DC00C197A1 = {
+			isa = PBXGroup;
+			children = (
+				ED22E5C6239682DC00C197A1 /* Face Recognition iOS */,
+				ED22E5DD239682DF00C197A1 /* Face Recognition iOSTests */,
+				ED22E5E8239682DF00C197A1 /* Face Recognition iOSUITests */,
+				ED22E5C5239682DC00C197A1 /* Products */,
+				19AF2DB0C5E16A94D5A2E19E /* Pods */,
+				54618954690591E024FA74CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED22E5C5239682DC00C197A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED22E5C4239682DC00C197A1 /* Face Recognition iOS.app */,
+				ED22E5DA239682DF00C197A1 /* Face Recognition iOSTests.xctest */,
+				ED22E5E5239682DF00C197A1 /* Face Recognition iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED22E5C6239682DC00C197A1 /* Face Recognition iOS */ = {
+			isa = PBXGroup;
+			children = (
+				ED22E5C7239682DC00C197A1 /* AppDelegate.swift */,
+				ED22E5C9239682DC00C197A1 /* SceneDelegate.swift */,
+				ED22E5CB239682DC00C197A1 /* ViewController.swift */,
+				ED8897212398FA22009348A0 /* FaceView.swift */,
+				EDE65CD223979D32001CCBF8 /* ApplicationConstants.swift */,
+				EDE65CD023979D28001CCBF8 /* FaceAPI.swift */,
+				EDE65CD62397B64C001CCBF8 /* Models.swift */,
+				EDE65CD423979EF4001CCBF8 /* UIViewController+alert.swift */,
+				ED889723239A7F2E009348A0 /* CoreGraphicsExtensions.swift */,
+				ED889725239A7F4A009348A0 /* UIViewExtension.swift */,
+				ED22E5CD239682DC00C197A1 /* Main.storyboard */,
+				ED22E5D0239682DE00C197A1 /* Assets.xcassets */,
+				ED22E5D2239682DE00C197A1 /* LaunchScreen.storyboard */,
+				ED22E5D5239682DE00C197A1 /* Info.plist */,
+			);
+			path = "Face Recognition iOS";
+			sourceTree = "<group>";
+		};
+		ED22E5DD239682DF00C197A1 /* Face Recognition iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED22E5DE239682DF00C197A1 /* Face_Recognition_iOSTests.swift */,
+				ED22E5E0239682DF00C197A1 /* Info.plist */,
+			);
+			path = "Face Recognition iOSTests";
+			sourceTree = "<group>";
+		};
+		ED22E5E8239682DF00C197A1 /* Face Recognition iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED22E5E9239682DF00C197A1 /* Face_Recognition_iOSUITests.swift */,
+				ED22E5EB239682DF00C197A1 /* Info.plist */,
+			);
+			path = "Face Recognition iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED22E5C3239682DC00C197A1 /* Face Recognition iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED22E5EE239682DF00C197A1 /* Build configuration list for PBXNativeTarget "Face Recognition iOS" */;
+			buildPhases = (
+				9D9BDEA97B5C3C90B6E5684F /* [CP] Check Pods Manifest.lock */,
+				ED22E5C0239682DC00C197A1 /* Sources */,
+				ED22E5C1239682DC00C197A1 /* Frameworks */,
+				ED22E5C2239682DC00C197A1 /* Resources */,
+				3FF3FD2FE41405BDA6DD42AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Face Recognition iOS";
+			productName = "Face Recognition iOS";
+			productReference = ED22E5C4239682DC00C197A1 /* Face Recognition iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED22E5D9239682DF00C197A1 /* Face Recognition iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED22E5F1239682DF00C197A1 /* Build configuration list for PBXNativeTarget "Face Recognition iOSTests" */;
+			buildPhases = (
+				30ADB8806043C532831BD721 /* [CP] Check Pods Manifest.lock */,
+				ED22E5D6239682DF00C197A1 /* Sources */,
+				ED22E5D7239682DF00C197A1 /* Frameworks */,
+				ED22E5D8239682DF00C197A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED22E5DC239682DF00C197A1 /* PBXTargetDependency */,
+			);
+			name = "Face Recognition iOSTests";
+			productName = "Face Recognition iOSTests";
+			productReference = ED22E5DA239682DF00C197A1 /* Face Recognition iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED22E5E4239682DF00C197A1 /* Face Recognition iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED22E5F4239682DF00C197A1 /* Build configuration list for PBXNativeTarget "Face Recognition iOSUITests" */;
+			buildPhases = (
+				21A66D3842B4F55CFABA1F9F /* [CP] Check Pods Manifest.lock */,
+				ED22E5E1239682DF00C197A1 /* Sources */,
+				ED22E5E2239682DF00C197A1 /* Frameworks */,
+				ED22E5E3239682DF00C197A1 /* Resources */,
+				AFBC0E6B78DF37EA95D9CEAC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED22E5E7239682DF00C197A1 /* PBXTargetDependency */,
+			);
+			name = "Face Recognition iOSUITests";
+			productName = "Face Recognition iOSUITests";
+			productReference = ED22E5E5239682DF00C197A1 /* Face Recognition iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED22E5BC239682DC00C197A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Hot Cocoa Software";
+				TargetAttributes = {
+					ED22E5C3239682DC00C197A1 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					ED22E5D9239682DF00C197A1 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = ED22E5C3239682DC00C197A1;
+					};
+					ED22E5E4239682DF00C197A1 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = ED22E5C3239682DC00C197A1;
+					};
+				};
+			};
+			buildConfigurationList = ED22E5BF239682DC00C197A1 /* Build configuration list for PBXProject "Face Recognition iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED22E5BB239682DC00C197A1;
+			productRefGroup = ED22E5C5239682DC00C197A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED22E5C3239682DC00C197A1 /* Face Recognition iOS */,
+				ED22E5D9239682DF00C197A1 /* Face Recognition iOSTests */,
+				ED22E5E4239682DF00C197A1 /* Face Recognition iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED22E5C2239682DC00C197A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED22E5D4239682DE00C197A1 /* LaunchScreen.storyboard in Resources */,
+				ED22E5D1239682DE00C197A1 /* Assets.xcassets in Resources */,
+				ED22E5CF239682DC00C197A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED22E5D8239682DF00C197A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED22E5E3239682DF00C197A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21A66D3842B4F55CFABA1F9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Face Recognition iOS-Face Recognition iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30ADB8806043C532831BD721 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Face Recognition iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FF3FD2FE41405BDA6DD42AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS/Pods-Face Recognition iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS/Pods-Face Recognition iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS/Pods-Face Recognition iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D9BDEA97B5C3C90B6E5684F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Face Recognition iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFBC0E6B78DF37EA95D9CEAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS-Face Recognition iOSUITests/Pods-Face Recognition iOS-Face Recognition iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS-Face Recognition iOSUITests/Pods-Face Recognition iOS-Face Recognition iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Face Recognition iOS-Face Recognition iOSUITests/Pods-Face Recognition iOS-Face Recognition iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED22E5C0239682DC00C197A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED889726239A7F4A009348A0 /* UIViewExtension.swift in Sources */,
+				EDE65CD323979D32001CCBF8 /* ApplicationConstants.swift in Sources */,
+				ED22E5CC239682DC00C197A1 /* ViewController.swift in Sources */,
+				EDE65CD123979D28001CCBF8 /* FaceAPI.swift in Sources */,
+				ED8897222398FA23009348A0 /* FaceView.swift in Sources */,
+				EDE65CD523979EF4001CCBF8 /* UIViewController+alert.swift in Sources */,
+				ED22E5C8239682DC00C197A1 /* AppDelegate.swift in Sources */,
+				ED22E5CA239682DC00C197A1 /* SceneDelegate.swift in Sources */,
+				EDE65CD72397B64C001CCBF8 /* Models.swift in Sources */,
+				ED889724239A7F2E009348A0 /* CoreGraphicsExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED22E5D6239682DF00C197A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED22E5DF239682DF00C197A1 /* Face_Recognition_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED22E5E1239682DF00C197A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED22E5EA239682DF00C197A1 /* Face_Recognition_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED22E5DC239682DF00C197A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED22E5C3239682DC00C197A1 /* Face Recognition iOS */;
+			targetProxy = ED22E5DB239682DF00C197A1 /* PBXContainerItemProxy */;
+		};
+		ED22E5E7239682DF00C197A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED22E5C3239682DC00C197A1 /* Face Recognition iOS */;
+			targetProxy = ED22E5E6239682DF00C197A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED22E5CD239682DC00C197A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED22E5CE239682DC00C197A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED22E5D2239682DE00C197A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED22E5D3239682DE00C197A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED22E5EC239682DF00C197A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED22E5ED239682DF00C197A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED22E5EF239682DF00C197A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C95D5406B2F016F94843DEB8 /* Pods-Face Recognition iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSD8A77M73;
+				INFOPLIST_FILE = "Face Recognition iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcs.Face-Recognition-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED22E5F0239682DF00C197A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624D08A4113240527BA4B7C3 /* Pods-Face Recognition iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSD8A77M73;
+				INFOPLIST_FILE = "Face Recognition iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcs.Face-Recognition-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED22E5F2239682DF00C197A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F612AB66097A4167AE0334 /* Pods-Face Recognition iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSD8A77M73;
+				INFOPLIST_FILE = "Face Recognition iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcs.Face-Recognition-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Face Recognition iOS.app/Face Recognition iOS";
+			};
+			name = Debug;
+		};
+		ED22E5F3239682DF00C197A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7486D714DC417165681552AC /* Pods-Face Recognition iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSD8A77M73;
+				INFOPLIST_FILE = "Face Recognition iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcs.Face-Recognition-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Face Recognition iOS.app/Face Recognition iOS";
+			};
+			name = Release;
+		};
+		ED22E5F5239682DF00C197A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B4E498DAF7E4A3AB6FF2812 /* Pods-Face Recognition iOS-Face Recognition iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSD8A77M73;
+				INFOPLIST_FILE = "Face Recognition iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcs.Face-Recognition-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Face Recognition iOS";
+			};
+			name = Debug;
+		};
+		ED22E5F6239682DF00C197A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B3D8D666D43861FF63EA1ED /* Pods-Face Recognition iOS-Face Recognition iOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSD8A77M73;
+				INFOPLIST_FILE = "Face Recognition iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcs.Face-Recognition-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Face Recognition iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED22E5BF239682DC00C197A1 /* Build configuration list for PBXProject "Face Recognition iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED22E5EC239682DF00C197A1 /* Debug */,
+				ED22E5ED239682DF00C197A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED22E5EE239682DF00C197A1 /* Build configuration list for PBXNativeTarget "Face Recognition iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED22E5EF239682DF00C197A1 /* Debug */,
+				ED22E5F0239682DF00C197A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED22E5F1239682DF00C197A1 /* Build configuration list for PBXNativeTarget "Face Recognition iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED22E5F2239682DF00C197A1 /* Debug */,
+				ED22E5F3239682DF00C197A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED22E5F4239682DF00C197A1 /* Build configuration list for PBXNativeTarget "Face Recognition iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED22E5F5239682DF00C197A1 /* Debug */,
+				ED22E5F6239682DF00C197A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED22E5BC239682DC00C197A1 /* Project object */;
+}

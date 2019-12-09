@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Face_Recognition_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yo8-Z1-QSF">
+                                <rect key="frame" x="37" y="236" width="340" height="424"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8Nm-7G-Z68">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="38"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZr-DE-lup">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SeI-KL-5vt">
+                                                <rect key="frame" x="58" y="0.0" width="282" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-1577909_1280" translatesAutoresizingMaskIntoConstraints="NO" id="3T6-s3-jEi">
+                                        <rect key="frame" x="0.0" y="46" width="340" height="340"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="340" id="1O5-xs-Phn"/>
+                                            <constraint firstAttribute="width" constant="340" id="vam-HU-bAy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fIi-zY-H9a">
+                                        <rect key="frame" x="0.0" y="394" width="340" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUx-O0-CVn">
+                                                <rect key="frame" x="0.0" y="0.0" width="158" height="30"/>
+                                                <state key="normal" title="Add person"/>
+                                                <connections>
+                                                    <action selector="addPersonToCollection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nf2-s9-Ue0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbj-vD-kHK">
+                                                <rect key="frame" x="182" y="0.0" width="158" height="30"/>
+                                                <state key="normal" title="Recognize Person"/>
+                                                <connections>
+                                                    <action selector="recognizePerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOu-M7-BTc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of1-HJ-Egy">
+                                <rect key="frame" x="0.0" y="832" width="414" height="30"/>
+                                <state key="normal" title="Get the number of person stored in the list"/>
+                                <connections>
+                                    <action selector="getStoredPersons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rOx-Rm-ScL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching for a match..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQz-wt-N2d">
+                                <rect key="frame" x="0.0" y="676" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Of1-HJ-Egy" secondAttribute="trailing" id="37H-XK-AO9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zQz-wt-N2d" secondAttribute="trailing" id="5v3-qT-lhV"/>
+                            <constraint firstItem="zQz-wt-N2d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CNH-AG-sp9"/>
+                            <constraint firstItem="Of1-HJ-Egy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ff1-n7-xY0"/>
+                            <constraint firstItem="zQz-wt-N2d" firstAttribute="top" secondItem="yo8-Z1-QSF" secondAttribute="bottom" constant="16" id="fGf-Lo-yk3"/>
+                            <constraint firstItem="yo8-Z1-QSF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="isX-yt-oBO"/>
+                            <constraint firstItem="Of1-HJ-Egy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="lPH-nd-oGw"/>
+                            <constraint firstItem="yo8-Z1-QSF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xqb-p5-P6M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="SeI-KL-5vt" id="4Vc-ES-cE9"/>
+                        <outlet property="searchingLabel" destination="zQz-wt-N2d" id="wQz-Zq-x7a"/>
+                        <outlet property="selectedPhoto" destination="3T6-s3-jEi" id="Zo6-BR-TZg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="140.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar-1577909_1280" width="1280" height="1280"/>
+    </resources>
+</document>
