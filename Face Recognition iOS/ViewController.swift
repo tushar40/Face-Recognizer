@@ -116,24 +116,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     //MARK:- UIViewController methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        createPersonGroup(groupId: groupID)
+//                createPersonGroup(groupId: groupID)
         //        selectedPhoto.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ShowImagePicker)))
         getPersonListInCollection(personGroupId: groupID)
-        
+
         configureCaptureSession()
-        
+
         searchingLabel.isHidden = true
         nameLayer.alignmentMode = .center
         nameLayer.fontSize = 22
-        
+
         faceView.frame = selectedPhoto.bounds
         faceView.isOpaque = false
         selectedPhoto.addSubview(faceView)
-        
+
         maxX = view.bounds.maxX
         midY = view.bounds.midY
         maxY = view.bounds.maxY
-        
+
         session.startRunning()
         
     }
@@ -196,7 +196,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                                     switch result {
                                     case .Success(let json):
                                         print("Created person group - ", json)
-                                        self.alert(title: "Added \(self.selectedPerson!.name)", message: "to group - \(groupId)")
+                                        self.alert(title: "Successfully created group", message: "to group - \(groupId)")
                                     case .Failure(let error):
                                         print("Error creating person group - ", error)
                                         self.alert(title: "Error", message: "Error creating person group")

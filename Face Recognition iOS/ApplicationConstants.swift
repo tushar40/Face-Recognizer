@@ -15,7 +15,7 @@ struct ApplicationConstants
     // Cognitive services information
     static let ocpApimSubscriptionKey = "e74bf6dc7308401790364b84247e1964"
     static let faceApiEndpoint = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0"
-    static let personGroupId = "sample-person-group"
+    static let personGroupId = "sample-person-group-model2"
 
 }
 

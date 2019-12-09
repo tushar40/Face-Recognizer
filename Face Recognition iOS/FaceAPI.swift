@@ -15,6 +15,9 @@ var personIDDictionary: [String: String] = [:]
 
 class FaceAPI: NSObject
 {
+    private static let recognitionModel = "recognition_02"
+    private static let detectionModel = "detection_02"
+
     // Create person group
     static func createPersonGroup(personGroupId: String, name: String, userData: String?, completion: @escaping (_ result: FaceAPIResult<JSON, Error>) -> Void)
     {
@@ -26,7 +29,7 @@ class FaceAPI: NSObject
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue(ApplicationConstants.ocpApimSubscriptionKey, forHTTPHeaderField: "Ocp-Apim-Subscription-Key")
         
-        var json: [String: AnyObject] = ["name": name as AnyObject]
+        var json: [String: AnyObject] = ["name": name as AnyObject, "recognitionModel": recognitionModel as AnyObject]
         
         if let userData = userData {
             json["userData"] = userData as AnyObject
@@ -196,7 +199,7 @@ class FaceAPI: NSObject
     // Detect faces
     static func detectFaces(facesPhoto: UIImage, completion: @escaping (_ result: FaceAPIResult<JSON, Error>) -> Void)
     {
-        let url = "\(ApplicationConstants.faceApiEndpoint)/detect?returnFaceId=true&returnFaceLandmarks=false"
+        let url = "\(ApplicationConstants.faceApiEndpoint)/detect?returnFaceId=true&returnFaceLandmarks=false&recognitionModel=\(recognitionModel)&returnRecognitionModel=false&detectionModel=\(detectionModel)"
         var request = URLRequest(url: URL(string: url)!)
         
         request.httpMethod = "POST"
@@ -293,4 +296,5 @@ class FaceAPI: NSObject
         }
         task.resume()
     }
+
 }
