@@ -123,6 +123,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         configureCaptureSession()
 
         searchingLabel.isHidden = true
+        nameLayer.string = nameTag
+        nameLayer.foregroundColor = .init(srgbRed: 0, green: 0, blue: 1, alpha: 1)
         nameLayer.alignmentMode = .center
         nameLayer.fontSize = 22
 
@@ -258,6 +260,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 print("Error posting to train - ", error)
                 self.alert(title: "Error", message: "Error posting to train")
                 self.isLoading = false
+                self.isIdentifying = false
                 break
             }
         }
@@ -270,6 +273,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             case .Success(let json):
                 print("training complete - ", json)
                 let status = json["status"] as! String
+                
                 
                 if status == "notstarted" || status == "running" {
                     print("Training in progress")
@@ -597,7 +601,7 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
             let displacement = getDistance(rect1: boxArray.first!, rect2: boxArray.last!)
             print("Box array full, distance: \(displacement)")
             boxArray = [CGRect]()
-            if displacement.magnitude > 0.10 && !isIdentifying && nameTag == defaultName {
+            if displacement.magnitude > 0.08 && !isIdentifying && nameTag == defaultName {
                 print("Identifying face.")
                 identifyFace()
             }
